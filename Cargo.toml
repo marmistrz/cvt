@@ -3,6 +3,9 @@ name = "cvt"
 version = "0.1.0"
 authors = ["Marcin Mielniczuk <marmistrz.dev@zoho.eu>"]
 edition = "2018"
+license = "Apache-2.0"
+description = "Expose the cvt function from Rust libstd."
+repository = "https://github.com/marmistrz/cvt"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
