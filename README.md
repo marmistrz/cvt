@@ -7,6 +7,12 @@
 [crates-io]: https://crates.io/crates/cvt
 
 This package exposes the `cvt` function used extensively by `libstd` to
-convert platform-specific syscall error codes.
+convert platform-specific syscall error codes to `std::io::Result`.
 
-The code was mostly copied over from Rust libstd.
+Usually syscalls use return values for errors, the conventions differ. For instance,
+on Unix `0` means success on Unix but failure on Windows.
+
+While those conventions are not always followed, they usually are and
+`cvt` is there to reduce the mental bookkeeping and make it easier to handle syscall errors.
+
+The code was mostly copied over from Rust libstd, because the function is not public.
