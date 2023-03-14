@@ -1,6 +1,6 @@
 [package]
 name = "cvt"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Marcin Mielniczuk <marmistrz.dev@zoho.eu>"]
 edition = "2018"
 license = "Apache-2.0"
